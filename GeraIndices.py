@@ -111,6 +111,8 @@ def GeraIndices(X,BESTo,FOBESTo,DIo,MAT_INDo,SOMA,TOTAL,syn0_F,
     CRo=CRo*(1+Fd) #CRo=CRo+Fc
   else:
     CRo=CRo*(1-Fd);#CRo=CRo-Fc
+    if(CRo<0.1):
+      CRo=0.1
   
   if(CRo<Fc):CRo=Fc 
   if(Fo<Fc):Fo=Fc
