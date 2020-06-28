@@ -30,6 +30,15 @@ def Schwefel_222(x):
     return sumx
 # f(x)=0 x=(0,0) [−10, 10]
 
+def Schwefel_221(x):
+	maximum = 0.0
+	for c in x:
+		if abs(c) > maximum:
+			maximum = abs(c)
+	return maximum
+# f(x)=0 x=(0,0) [−100, 100]
+
+
 def Schwefel_12(x):
     sum2=0
     for k in range(len(x)):
