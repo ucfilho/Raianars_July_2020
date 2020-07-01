@@ -162,7 +162,7 @@ def Styblinskitank(x):
 def Rosenbrock(x):
     fun=0
     for i in range(len(x)-1):
-        fun = 100*(x[i]-x[i-1]**2)**2 + (1-x[i-1])**2
+        fun = 100*(x[i+1]-x[i]**2)**2 + (1-x[i])**2
     return fun 
 # Global Minimum: 0 , domain=[-30,30]
 
