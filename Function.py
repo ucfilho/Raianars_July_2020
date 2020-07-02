@@ -55,6 +55,10 @@ def Sphere(x):
     return sum([i**2 for i in x])
 # f(x)=0 x=(0,0) [-5.12,5.12]
 
+def Step(x):
+    return sum([(i+0.5)**2 for i in x])
+# f(x)=0 x=(-0.5,-0.5) [-100,100]
+
 def Sum_of_different_powers(x):
     return sum([abs(x[i])**(i+2) for i in range(len(x))])
 # f(x)=0 x=(0,0) , d=[-1,1]
