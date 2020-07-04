@@ -123,7 +123,11 @@ def Intervalo(dim,fchoice):
    
     if(fchoice=='alpinen2'):
         MAX=np.repeat(10,dim) 
-        MIN=np.repeat(0,dim)     
+        MIN=np.repeat(0,dim) 
+         
+    if(fchoice=='alpine_n1'):
+        MAX=np.repeat(10,dim) 
+        MIN=np.repeat(-10,dim)  
       
     if(fchoice=='Griewank'):
         MAX=np.repeat(600,dim) 
