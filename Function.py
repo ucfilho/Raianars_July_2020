@@ -177,13 +177,23 @@ def HappyCat(x):
     return ((s - len(x))**2)**alpha + (s / 2 + sum(x)) / len(x) + 0.5 
 # global mimima at (-1,-1,...,-1) - f(x)=0  - d=[-2,2] (qlq dominio)
 '''
-
+'''
 def HappyCat(x): 
     alpha=1. / 8
     s=0
     for i in x:
       s=s+x*x
     return ((s - len(x))**2)**alpha + (s / 2 + sum(x)) / len(x) + 0.5 
+# global mimima at (-1,-1,...,-1) - f(x)=0  - d=[-2,2] (qlq dominio)
+'''
+
+def HappyCat(x): 
+    alpha=1. / 8
+    s=0
+    Num=len(x)
+    for i in range(Num):
+               s=s+x[i]*x[i]
+    return ((s - len(x))*(s - len(x)))**alpha + (s / 2 + sum(x)) / len(x) + 0.5 
 # global mimima at (-1,-1,...,-1) - f(x)=0  - d=[-2,2] (qlq dominio)
 
 
