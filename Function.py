@@ -204,6 +204,13 @@ def Alpinen2(x):
   return prod*(-1)
 # global maxima f(x)= 2.808^n - x=(7.917,...,7.917) d=[0,10] 
 
+def Alpine_n1(x):
+  s=0
+  for i in x:
+    s=s+abs(i*np.sin(i)+0.1*i)
+  return s
+# global minimum f(0)= 0 d=[-10,10] 
+
 def Periodic(x):
   sumx2=0
   sin2x=0
