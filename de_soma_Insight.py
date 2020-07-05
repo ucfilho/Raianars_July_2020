@@ -1,10 +1,11 @@
 import numpy as np
+import random
 
 def de(MAX,MIN, mut, crossp, popsize, its,fobj,X,SOMA,TOTAL):
     
   Num=len(X[0,:]) # num eh usado duas vezes para significados diferentes
   
-  XOLD=X
+  XOLD=np.copy(X)
   X=np.zeros((popsize,Num)) 
     
   for i in range(popsize):
@@ -34,6 +35,7 @@ def de(MAX,MIN, mut, crossp, popsize, its,fobj,X,SOMA,TOTAL):
       SOMA=SOMA+1
       
       idxs = [idx for idx in range(popsize) if idx != j]
+      random.seed(np.random.rand())
       a, b, c = X[np.random.choice(idxs, 3, replace = False)]
       mutant = a + mut * (b - c)
 
