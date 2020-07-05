@@ -99,6 +99,17 @@ def ridge(x):
   return x[0]+d*soma**(alpha)
 # f(x)=-gamma , x=(-gamma,0,0,...,0) ex gamma=5 (gamma é o limite inferior do intervalo)
 
+def Bent_Cigar(x):
+    
+  soma=0
+  Num=len(x)
+
+  for i in range(1,Num):
+    soma=soma+x[i]**2
+  soma=soma*10**6+x[0]**2
+  return soma
+# f(x)=0 , x=(0,0,...,0) [-100,100]
+
 # Xin-She Yang N. 3 Function
 def XinSheYang(x):
   m=5
