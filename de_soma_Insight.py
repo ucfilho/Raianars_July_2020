@@ -1,5 +1,4 @@
 import numpy as np
-import random
 
 def de(MAX,MIN, mut, crossp, popsize, its,fobj,X,SOMA,TOTAL):
     
@@ -35,7 +34,6 @@ def de(MAX,MIN, mut, crossp, popsize, its,fobj,X,SOMA,TOTAL):
       SOMA=SOMA+1
       
       idxs = [idx for idx in range(popsize) if idx != j]
-      random.seed(np.random.rand())
       a, b, c = X[np.random.choice(idxs, 3, replace = False)]
       mutant = a + mut * (b - c)
 
