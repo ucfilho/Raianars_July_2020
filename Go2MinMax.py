@@ -40,6 +40,10 @@ def Intervalo(dim,fchoice):
     if(fchoice=='Step'):
         MAX=np.repeat(100,dim)
         MIN=np.repeat(-100,dim)      
+      
+    if(fchoice=='Bent_Cigar'):
+        MAX=np.repeat(100,dim)
+        MIN=np.repeat(-100,dim)    
 
     if(fchoice=='Easom'):
         MAX=np.repeat(10,dim) # precisa trocar
