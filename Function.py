@@ -100,7 +100,7 @@ def ridge(x):
 # f(x)=-gamma , x=(-gamma,0,0,...,0) ex gamma=5 (gamma é o limite inferior do intervalo)
 
 def Bent_Cigar(x):
-    
+
   soma=0
   Num=len(x)
 
