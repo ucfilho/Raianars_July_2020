@@ -116,6 +116,10 @@ def Intervalo(dim,fchoice):
     if(fchoice=='Michalewicz'):
         MAX=np.repeat(np.pi,dim)
         MIN=np.repeat(0,dim)
+      
+    if(fchoice=='Michalewicz_New'):
+        MAX=np.repeat(np.pi,dim)
+        MIN=np.repeat(0,dim)
 
     if(fchoice=='Drop_wave'):
         MAX=np.repeat(10,dim) # precisa trocar
