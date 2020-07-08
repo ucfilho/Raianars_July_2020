@@ -151,11 +151,11 @@ def Michalewicz(x):
 # Shubert3 function
 def Shubert3(x):
   soma=0
-
-  for i in x:
+  Num=len(x)
+  for i in range(Num):
     for k in range(5):
       j=k+1
-      soma=soma +j * np.sin(((j + 1) * i) + j)
+      soma=soma +j * np.sin(((j + 1) * x[i]) + j)
 
   return soma
 # global minimum −29.6733337 at x (not specified but DE found)=(-1.11409968,-1.11409968) 
