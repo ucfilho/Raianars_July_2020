@@ -145,7 +145,15 @@ def Ackley(x):
  # f(x)=0 x=(0,0) [-32, 32]
 
 def Michalewicz(x):
-    return -sum([sin(x[i])*sin((i)*x[i]**2/pi)**20 for i in range(len(x))])
+    return -sum([sin(x[i])*sin((i+1)*x[i]**2/pi)**20 for i in range(len(x))])
+#fx=-9.66015 d=10 [0,pi]
+
+def Michalewicz_New(x):
+    Num=len(x)
+    S=0
+    for i in range(Num):
+        S=S+np.sin(x[i])*np.sin((i+1)*x[i]**2/np.pi)**20 
+    return S
 #fx=-9.66015 d=10 [0,pi]
 
 # Shubert3 function
