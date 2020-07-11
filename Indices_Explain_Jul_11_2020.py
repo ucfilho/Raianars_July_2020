@@ -1,6 +1,4 @@
-def GeraIndices(X,BESTo,FOBESTo,DIo,MAT_INDo,SOMA,TOTAL,syn0_F,
-                syn1_F,X_max_F,X_min_F,syn0_CR,syn1_CR,X_max_CR,
-                X_min_CR,Fc,fields,Fun):
+def Indices(X,BESTo,FOBESTo,BEST,FOBEST,DIo,MAT_INDo,Fun):
   
   nrow,ncol=X.shape
   FOBESTm=1e99
