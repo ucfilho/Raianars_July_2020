@@ -28,6 +28,10 @@ def Intervalo(dim,fchoice):
         MAX=np.repeat(10,dim)
         MIN=np.repeat(-10,dim)
 
+    if(fchoice=='Fake_Rosenbrock'):
+        MAX=np.repeat(10,dim)
+        MIN=np.repeat(-10,dim)
+
     
     if(fchoice=='Sum_of_different_powers'):
         MAX=np.repeat(1,dim)
