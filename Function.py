@@ -110,6 +110,17 @@ def Bent_Cigar(x):
   return soma
 # f(x)=0 , x=(0,0,...,0) [-100,100]
 
+def BentCigar(x):
+
+  soma=0
+  Num=len(x)
+
+  for i in range(1,Num):
+    soma=soma+x[i]**2
+  soma=soma*10**6+x[0]**2
+  return soma
+# f(x)=0 , x=(0,0,...,0) [-100,100]
+
 # Xin-She Yang N. 3 Function
 def XinSheYang(x):
   m=5
